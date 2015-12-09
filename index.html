@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Web App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/jquery.min.js"></script>
+        <script>
+    $(document).ready(function(){
+    $("#source").click(function(){
+        $("#div1").fadeIn(2000);
+        $("#div2").fadeIn(2000);
+    });
+     $("#div1").click(function(){
+        $("#div3").fadeIn(2000);
+    });
+    $("#div2").click(function(){
+        $("#div4").fadeIn(2000);    
+    });
+});
+        </script>
+    </head>
+    <body>
+        <h1 class="txt_head">Energy Sources</h1>
+        <button class="btn_top">> In your group, brainstorm definitions for each of the terms. What does your group know about each one?</button><br><br>
+        <button id="source" class="btn btn-main btn_1">Source of Energy</button><br><br>
+        <button id="div1" class="btn-main btn_fade btn1 ">Renewable</button>
+        <button id="div2" class="btn-main btn_fade btn1">Non-Renewable</button>  
+        <div class="col">
+            <div id="div3" class="txt_fade col-l">
+                <label>
+                    Renewable energy is generated from sources that are derived from and quickly replenished by the natural movements and mechanisms of the Earth. The sun, wind, and water are major sources of renewable energy. Solar cells, wind farms, and hydroelectric power have been used successfully to generate electricity for industry, transportation, and for use in homes.
+                </label>   
+            </div>
+            <div id="div4" class="txt_fade col-l">    
+                <label>
+                    Non-renewable energy resources are those resources that cannot be replenished after its use and their availability is limited.  Major non-renewable energy resources are fossil fuels and nuclear fuels.
+                </label>            
+            </div>
+        </div>
+    </body>
+</html>
